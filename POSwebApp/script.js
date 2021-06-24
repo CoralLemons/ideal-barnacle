@@ -1,4 +1,1 @@
-/* Placeholder for javascript code
-
------> push from VSCODE
-*/
+/* Placeholder for javascript code*/
