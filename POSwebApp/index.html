@@ -15,11 +15,102 @@
         <main class="main-container flex-row">
             <section class="order flex-column">
                 <article class="receipt flex-column">
-                    <div class="company-info flex-column"></div> <!--can use JS to dynamically catch this information-->
-                    <div class="receipt-details"></div>
-                    <div class="receipt-footer flex-column"></div>
+                    <div class="company-info flex-column">
+                        <p id="company-name"></p>
+                        <p id="company-address"></p>
+                        <p id="company-city"></p>
+                        <p id="company-phone"></p>
+                        <p id="invoice-number"></p>
+                    </div> <!--can use JS to dynamically catch this information-->
+                    <div class="receipt-details">
+                        <table class="detail-table">
+                            <thead>
+                                <tr>
+                                    <td class="dotted-border" colspan="5"></td>
+                                </tr>
+                                <tr>
+                                    <td class="empty-border" colspan="5"></td>
+                                </tr>
+                                <tr>
+                                    <th class="description">Description</th>
+                                    <th class="quantity">Qty</th>
+                                    <th class="price">Price</th>
+                                    <th class="subtotal">Sub</th>
+                                    <th class="delete">Del</th>
+                                </tr>
+                                <tr>
+                                    <td class="dotted-border" colspan="5"></td>
+                                </tr>
+                                <tr>
+                                    <td class="empty-border" colspan="5"></td>
+                                </tr>
+                            </thead> <!--end table header-->
+                            <tbody>
+                                <tr>
+                                    <td class="description">Fried Pickle</td>
+                                    <td class="quantity">1</td>
+                                    <td class="price">$4.99</td>
+                                    <td class="subtotal">$4.99</td>
+                                    <td class="delete">placeholder</td>
+                                </tr>
+                            </tbody> <!--end table body-->
+                        </table> <!--end table-->
+                    </div>
+                    <div class="receipt-summary">
+                        <table class="summary-table">
+                            <tbody class="summary-table" id="total-summary">
+                                <tr>
+                                    <td class="dotted-border" colspan="5"></td>
+                                </tr>
+                                <tr>
+                                    <td class="empty-border" colspan="5"></td>
+                                </tr>
+                                <tr>
+                                    <td>Subtotal:</td>
+                                    <td id="subtotal-summary">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Tax:</td>
+                                    <td id="subtotal-tax">$0.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Grand Total:</td>
+                                    <td id="grandTotal-summary">$0.00</td>
+                                </tr>
+                            </tbody> <!--end table body-->
+                            <tbody class="summary-table" id="payment-summary">
+                                <tr>
+                                    <td>Amount Paid:</td>
+                                    <td id="amount-paid">$0.00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td id="tip-change-title">Change:</td>
+                                    <td id="tip-change-amount">$0.00</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Payment Type:</td>
+                                    <td id="payment-type"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="dotted-border" colspan="5"></td>
+                                </tr>
+                                <tr>
+                                    <td class="empty-border" colspan="5"></td>
+                                </tr>
+                            </tbody> <!--end table body-->
+                        </table> <!--end table-->
+                    </div>
+                    <div class="receipt-footer flex-column">
+                        <p id="receipt-message">Thank you for your business!</p>
+                        <p id="barcode">Barcode Placeholder</p>
+                    </div>
                 </article>
-                <div class="toolbar flex-row"></div>
+                <div class="toolbar flex-row">
+                    <!--insert emoji symbols for payment methods here-->
+                </div>
             </section> <!--end order section-->
             <section class="menu-payment grid">
             </section> <!--end menu-payment section-->

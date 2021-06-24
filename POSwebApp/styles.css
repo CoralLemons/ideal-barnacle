@@ -4,3 +4,96 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 } /* manually removing all padding, margins and setting the font */
+
+html, body {
+    height: 100%;
+} /* max height */
+
+main {
+    height: 92%;
+    margin-top: 10px;
+} /* reduce the overall main content height for a better layout*/
+
+header h1{
+    font-family: 'Audiowave', cursive;
+} /* change the header font to an appealing style */
+
+.grid{
+    display: grid;
+} /* display the grid class in a grid fashion */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+} /* display the flex row in a flex row */
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+} /* repeat for flex column */
+
+.order, .menu-payment{
+    border: solid .5px;
+    border-radius: 10px;
+    margin: 0px 10px 5px 10px;
+    height: 100%;
+    max-height: 100%;
+} /* style the order and menu-paymnet classes */
+
+/*---------------ORDER Below---------------*/
+
+.order{
+    background-color: antiquewhite;
+    flex: 0 0 440px; /* 0 0 fixes the width so that it does not shrink or grow */
+    overflow: auto;
+} /* change the order slip background to white to appear like paper */
+
+.receipt{
+    border: solid .5px;
+    margin: 10px 15px 5px 15px;
+    box-shadow: 3px 3px 2px rgb(3, 3, 3);
+    user-select: none; /* prevents user from selecting the text */
+    flex-grow: 1;
+} /* styles the receipt section where flex-grow makes it long like a receipt paper */
+
+.receipt, .company-info, .receipt-footer {
+    align-items: center;
+} /* center alignment for appearance */
+
+.company-info{
+    margin-top: 5px;
+}
+
+#company-name{
+    font-size: 1.5rem;
+}
+
+#company-phone{
+    font-size: 1.25rem;
+}
+
+th.description{
+    width: 180px;
+    text-align: left;
+} /* table header description */
+
+th.price{
+    width: 70px;
+}
+
+th.subtotal{
+    width: 75px;
+}
+
+.quantity, .price, .subtotal, .delete {
+    text-align: right;
+}
+
+.receipt-details{
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.dotted-border{
+    border-bottom: dotted 2px;
+}
